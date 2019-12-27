@@ -25,7 +25,7 @@ SECRET_KEY = 'ev*_c$bst7qajgs9&8rtmhwz93o7xw)e9wc+_942x(-u+nz^8x'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -130,3 +130,5 @@ LOGIN_REDIRECT_URL = 'posts'
 LOGOUT_REDIRECT_URL = 'posts'
 
 AUTH_USER_MODEL = 'Insta.InstaUser'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
